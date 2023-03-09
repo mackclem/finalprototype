@@ -23,7 +23,7 @@ fetch('https://the-cocktail-db.p.rapidapi.com/search.php?s=vodka', options)
         let drinkurl = ('https://www.thecocktaildb.com/drink/'+ drinkid);
         recipe2 = html`<div class="recipe2">
             <h2>${recipedrink.strDrink}</h2>
-            <a>${drinkurl}</a>
+            <a href=${drinkurl}>Link to drink recipe!</a>
             </div>`;
         render(recipe2, document.getElementById("recipe2"));
     });
